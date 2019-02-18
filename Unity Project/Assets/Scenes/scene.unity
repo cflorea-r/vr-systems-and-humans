@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 623663004}
   - component: {fileID: 623663003}
   - component: {fileID: 623663002}
+  - component: {fileID: 623663006}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -338,6 +339,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &623663006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623663001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a783f671592674b589cfc4953e28656b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shape: 0
+  quality: 1
+  interactable: 1
+  blocksRaycasts: 1
+  raycastMyLayerOnly: 1
+  forceUseBoxCollider: 0
+  angle: -15
+  preserveAspect: 1
+  vertAngle: 90
+  ringFill: 0.5
+  ringExternalDiamater: 1000
+  ringFlipVertical: 0
 --- !u!1 &653260035
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +925,7 @@ GameObject:
   - component: {fileID: 1076602737}
   - component: {fileID: 1076602739}
   - component: {fileID: 1076602738}
+  - component: {fileID: 1076602740}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -965,6 +991,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076602736}
   m_CullTransparentMesh: 0
+--- !u!114 &1076602740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076602736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e62188adca544cf1b96ccf1630f15f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoNotTesselate: 0
+  savedPos: {x: 0, y: 0, z: 0}
+  savedUp: {x: 0, y: 1, z: 0}
+  savedRectSize: {x: 2000, y: 1000}
+  savedColor: {r: 1, g: 1, b: 1, a: 0.392}
+  savedTextUV0: {x: 0, y: 0}
+  savedFill: 1
 --- !u!1 &1223518515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,9 +1063,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1266995505}
-  - component: {fileID: 1266995504}
   - component: {fileID: 1266995503}
   - component: {fileID: 1266995506}
+  - component: {fileID: 1266995504}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1056,7 +1101,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1266995502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 651aa76e8cc8486469816be09993892d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
@@ -1156,6 +1201,7 @@ GameObject:
   - component: {fileID: 1502481880}
   - component: {fileID: 1502481882}
   - component: {fileID: 1502481881}
+  - component: {fileID: 1502481883}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1219,6 +1265,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502481879}
   m_CullTransparentMesh: 0
+--- !u!114 &1502481883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502481879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e62188adca544cf1b96ccf1630f15f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoNotTesselate: 0
+  savedPos: {x: 0, y: 0, z: 0}
+  savedUp: {x: 0, y: 1, z: 0}
+  savedRectSize: {x: 2000, y: 1000}
+  savedColor: {r: 1, g: 1, b: 1, a: 1}
+  savedTextUV0: {x: 0, y: 0}
+  savedFill: 1
 --- !u!1 &1558187837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1344,7 @@ GameObject:
   - component: {fileID: 1561850566}
   - component: {fileID: 1561850568}
   - component: {fileID: 1561850567}
+  - component: {fileID: 1561850569}
   m_Layer: 5
   m_Name: TextMeshPro Text
   m_TagString: Untagged
@@ -1428,6 +1494,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561850565}
   m_CullTransparentMesh: 0
+--- !u!114 &1561850569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561850565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e62188adca544cf1b96ccf1630f15f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoNotTesselate: 0
+  savedPos: {x: 0, y: 0, z: 0}
+  savedUp: {x: 0, y: 0, z: 0}
+  savedRectSize: {x: 0, y: 0}
+  savedColor: {r: 0, g: 0, b: 0, a: 0}
+  savedTextUV0: {x: 0, y: 0}
+  savedFill: 0
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
