@@ -17,7 +17,7 @@ public class FlyingMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (fly)
+        if (fly || Input.GetKeyDown(KeyCode.F))
         {
             Fly();
             fly = false;
@@ -27,6 +27,7 @@ public class FlyingMenu : MonoBehaviour
     public void Fly()
     {
         GameObject gameObject = GameObject.Find("Canvas");
-        gameObject.transform.DOMove(Vector3.zero, 1, false);
+        gameObject.transform.position = new Vector3(0, 0, 25);
+        gameObject.transform.DOMove(new Vector3(0, 0, 2.5f), .5f, false);
     }
 }
