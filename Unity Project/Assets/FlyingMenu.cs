@@ -28,6 +28,6 @@ public class FlyingMenu : MonoBehaviour
     {
         GameObject gameObject = GameObject.Find("Canvas");
         gameObject.transform.position = new Vector3(0, 0, 25);
-        gameObject.transform.DOMove(new Vector3(0, 0, 2.5f), .5f, false);
+        gameObject.transform.DOMove(new Vector3(0, 0, 2.5f), .35f, false);
     }
 }
