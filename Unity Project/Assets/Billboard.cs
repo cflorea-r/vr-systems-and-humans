@@ -5,7 +5,7 @@ using UnityEngine;
 public class Billboard : MonoBehaviour
 {
 
-    [Range(0, 5)]
+    [Range(0, 10)]
     public int damping;
 
     // Start is called before the first frame update
