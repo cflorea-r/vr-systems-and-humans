@@ -726,7 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227af721bd0ced945818d9643d963d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damping: 5
+  damping: 10
 --- !u!1 &236673440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,7 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227af721bd0ced945818d9643d963d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damping: 5
+  damping: 10
 --- !u!1001 &512097611
 PrefabInstance:
   m_ObjectHideFlags: 0
