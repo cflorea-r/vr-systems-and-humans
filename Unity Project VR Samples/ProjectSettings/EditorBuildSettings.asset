@@ -24,4 +24,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/A3 Design, UIs/5 Horizon is not horizontal/Horizon is not horizontal.unity
     guid: 3c3e9d0b158a52c4c992195d6daacef6
+  - enabled: 1
+    path: Assets/A3 Design, UIs/6 Menu that is as large as FOV and locked to face/Menu
+      that is as large as FOV and locked to face.unity
+    guid: 0b75228623f97eb438392db6524e30fd
   m_configObjects: {}
