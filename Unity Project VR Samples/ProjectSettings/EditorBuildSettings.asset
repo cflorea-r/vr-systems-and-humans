@@ -6,14 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Intro.unity
+    path: Assets/A3 Design, UIs/0 start/start.unity
+    guid: 06634069d9a5ce5448b37a56eaa245a3
   - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/MainMenu.unity
+    path: Assets/A3 Design, UIs/1 Fear of heights/Fear of heights.unity
+    guid: 82e0c62d3e55807468fb45a77754cc6d
   - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Maze.unity
+    path: Assets/A3 Design, UIs/2 change FOV/change FOV.unity
+    guid: 96b8ee7bce16e4646a9504d83fa3b482
   - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Flyer.unity
+    path: Assets/A3 Design, UIs/3 depth of the gaze selection indicator/depth of the
+      gaze selection indicator.unity
+    guid: afcd3fcbebe33e5488c28ebc57d808cf
   - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Shooter360.unity
+    path: Assets/A3 Design, UIs/4 menu flying at you/menu flying at you.unity
+    guid: 8ab3815237c96614484b53a65a6a097b
   - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Shooter180.unity
+    path: Assets/A3 Design, UIs/5 Horizon is not horizontal/Horizon is not horizontal.unity
+    guid: 3c3e9d0b158a52c4c992195d6daacef6
+  m_configObjects: {}
