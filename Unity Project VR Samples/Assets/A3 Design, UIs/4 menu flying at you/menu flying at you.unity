@@ -336,8 +336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endValue: -2.5
-  duration: 0.35
-  delay: 2
+  duration: 0.2
+  delay: 5
 --- !u!1 &616661931
 GameObject:
   m_ObjectHideFlags: 0
