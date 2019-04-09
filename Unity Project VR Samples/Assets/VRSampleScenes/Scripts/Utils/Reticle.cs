@@ -54,7 +54,7 @@ namespace VRStandardAssets.Utils
 
         private void Update()
         {
-            print(a);
+            //print(a);
             if (Input.GetButtonDown("Fire1"))
             {
                 //if bad mode is enabled
