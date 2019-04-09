@@ -18,6 +18,7 @@ namespace VRStandardAssets.Utils
 
         private Vector3 m_OriginalScale;                            // Since the scale of the reticle changes, the original scale needs to be stored.
         private Quaternion m_OriginalRotation;                      // Used to store the original rotation of the reticle.
+        private Vector3 m_OriginalPosition;
 
         public bool a = false;
 
@@ -36,6 +37,7 @@ namespace VRStandardAssets.Utils
             // Store the original scale and rotation.
             m_OriginalScale = m_ReticleTransform.localScale;
             m_OriginalRotation = m_ReticleTransform.localRotation;
+            m_OriginalPosition = m_ReticleTransform.localPosition;
         }
 
 
@@ -50,6 +52,33 @@ namespace VRStandardAssets.Utils
             m_Image.enabled = true;
         }
 
+        private void Update()
+        {
+            print(a);
+            if (Input.GetButtonDown("Fire1"))
+            {
+                //if bad mode is enabled
+                if (a)
+                {
+                    a = false;
+                    print("ok mode");
+                }
+                else if (!a)
+                {
+                    a = true;
+                    print("not ok mode");
+
+                    // Set the scale based on the original and the distance from the camera.
+                    m_ReticleTransform.localScale = m_OriginalScale;
+
+                    // The rotation should just be the default.
+                    m_ReticleTransform.localRotation = m_OriginalRotation;
+
+                    m_ReticleTransform.localPosition = m_OriginalPosition;
+                }
+            }
+
+        }
 
         // This overload of SetPosition is used when the the VREyeRaycaster hasn't hit anything.
         public void SetPosition()
